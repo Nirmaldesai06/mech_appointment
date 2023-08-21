@@ -246,7 +246,7 @@ public class appointment_menu {
 		ResultSet resultSet = preparedStatement.executeQuery();
 		while (resultSet.next()) {
             int appId = resultSet.getInt("a_id");
-            int custId  = resultSet.getInt("_id");
+            int custId  = resultSet.getInt("c_id");
             int mechId  = resultSet.getInt("m_id");
             String appDate= resultSet.getString("a_date");
             String appSlot=resultSet.getString("a_slot");
